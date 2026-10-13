@@ -1,0 +1,19 @@
+Software Engineering Intern — Summer Program
+
+We are hiring college students and freshers for a 3-month internship.
+Location: Hyderabad (hybrid, 2 days office).
+No prior full-time experience required; intern/fresher background is expected.
+
+Skills to learn and use:
+Python, Git, REST APIs, SQL
+
+Preferred:
+React, JavaScript
+
+Education:
+Currently pursuing a Bachelor's in CS, IT, or related field.
+
+Responsibilities:
+- Pair with engineers on small features
+- Write tests
+- Participate in standups

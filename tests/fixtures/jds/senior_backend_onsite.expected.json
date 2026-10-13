@@ -1,0 +1,17 @@
+{
+  "job_title": "Senior Backend Engineer",
+  "experience_min": 5,
+  "experience_max": 8,
+  "location": "Bengaluru, Karnataka, India",
+  "work_mode": "On-site",
+  "employment_type": "Full-time",
+  "must_have_skills": ["Python", "FastAPI", "PostgreSQL", "Docker", "Kubernetes"],
+  "preferred_skills": ["Go", "AWS", "Terraform"],
+  "education": ["Bachelor's degree in Computer Science or equivalent"],
+  "responsibilities": [
+    "Design and implement backend services",
+    "Review code and mentor junior engineers",
+    "Improve reliability and observability"
+  ],
+  "keywords": ["Python", "FastAPI", "PostgreSQL", "Docker", "Kubernetes", "Go", "AWS"]
+}

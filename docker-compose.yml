@@ -1,0 +1,95 @@
+services:
+  postgres:
+    image: pgvector/pgvector:pg16
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: recruitment
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d recruitment"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      DATABASE_URL: postgresql+asyncpg://postgres:postgres@postgres:5432/recruitment
+      LLM_PROVIDER: ${LLM_PROVIDER:-gemini}
+      LLM_MODEL: ${LLM_MODEL:-gemini-2.0-flash}
+      LLM_TEMPERATURE: ${LLM_TEMPERATURE:-0}
+      GOOGLE_API_KEY: ${GOOGLE_API_KEY:-}
+      RECRUITER_USERNAME: ${RECRUITER_USERNAME:-recruiter}
+      RECRUITER_PASSWORD: ${RECRUITER_PASSWORD:-recruiter-review}
+      RECRUITER_SESSION_SECRET: ${RECRUITER_SESSION_SECRET:-local-dev-session-secret}
+      COMPANY_NAME: ${COMPANY_NAME:-Demo Company}
+      RECRUITER_DISPLAY_NAME: ${RECRUITER_DISPLAY_NAME:-Demo Recruiter}
+      RECRUITER_TITLE: ${RECRUITER_TITLE:-Technical Recruiter}
+      RECRUITER_CONTACT_EMAIL: ${RECRUITER_CONTACT_EMAIL:-recruiter@example.com}
+      EMAIL_PROVIDER: ${EMAIL_PROVIDER:-ses}
+      EMAIL_DRY_RUN: ${EMAIL_DRY_RUN:-true}
+      EMAIL_FROM_ADDRESS: ${EMAIL_FROM_ADDRESS:-}
+      EMAIL_REPLY_TO: ${EMAIL_REPLY_TO:-}
+      AWS_REGION: ${AWS_REGION:-}
+      AWS_ACCESS_KEY_ID: ${AWS_ACCESS_KEY_ID:-}
+      AWS_SECRET_ACCESS_KEY: ${AWS_SECRET_ACCESS_KEY:-}
+      SES_CONFIGURATION_SET: ${SES_CONFIGURATION_SET:-}
+      SENDGRID_API_KEY: ${SENDGRID_API_KEY:-}
+      INTERVIEW_TIMEZONE: ${INTERVIEW_TIMEZONE:-Asia/Kolkata}
+      INTERVIEW_DURATION_MINUTES: ${INTERVIEW_DURATION_MINUTES:-45}
+      CALENDAR_DRY_RUN: ${CALENDAR_DRY_RUN:-true}
+      CALENDAR_PROVIDER: ${CALENDAR_PROVIDER:-none}
+      GOOGLE_CALENDAR_ID: ${GOOGLE_CALENDAR_ID:-}
+      GOOGLE_CALENDAR_CREDENTIALS_JSON: ${GOOGLE_CALENDAR_CREDENTIALS_JSON:-}
+      GOOGLE_CALENDAR_CREDENTIALS_FILE: ${GOOGLE_CALENDAR_CREDENTIALS_FILE:-}
+      GOOGLE_CALENDAR_SUBJECT: ${GOOGLE_CALENDAR_SUBJECT:-}
+      APP_ENV: ${APP_ENV:-development}
+      CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:3000,http://127.0.0.1:3000}
+    ports:
+      - "8000:8000"
+    depends_on:
+      postgres:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health')"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+      start_period: 25s
+
+  seed:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      DATABASE_URL: postgresql+asyncpg://postgres:postgres@postgres:5432/recruitment
+      APP_ENV: development
+    depends_on:
+      postgres:
+        condition: service_healthy
+      backend:
+        condition: service_healthy
+    entrypoint: ["python", "scripts/seed_recruiter_dashboard.py"]
+    restart: "no"
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      args:
+        API_PROXY_TARGET: http://backend:8000
+    environment:
+      API_PROXY_TARGET: http://backend:8000
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+
+volumes:
+  pgdata:

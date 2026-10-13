@@ -1,0 +1,17 @@
+{
+  "job_title": "Software Engineering Intern",
+  "experience_min": 0,
+  "experience_max": 1,
+  "location": "Hyderabad",
+  "work_mode": "Hybrid",
+  "employment_type": "Internship",
+  "must_have_skills": ["Python", "Git", "REST", "SQL"],
+  "preferred_skills": ["React", "JavaScript"],
+  "education": ["Currently pursuing a Bachelor's in CS, IT, or related field"],
+  "responsibilities": [
+    "Pair with engineers on small features",
+    "Write tests",
+    "Participate in standups"
+  ],
+  "keywords": ["Python", "Git", "REST", "SQL", "React", "JavaScript"]
+}

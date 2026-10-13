@@ -1,0 +1,1272 @@
+{
+  "mode": "offline_noisy_llm_plus_normalization",
+  "n_cases": 22,
+  "cases_passed": 22,
+  "overall_field_accuracy": 1.0,
+  "field_accuracy": {
+    "title": 1.0,
+    "experience_min": 1.0,
+    "experience_max": 1.0,
+    "location": 1.0,
+    "work_mode": 1.0,
+    "employment_type": 1.0,
+    "must_have_skills": 1.0,
+    "preferred_skills": 1.0,
+    "education": 1.0,
+    "responsibilities": 1.0,
+    "keywords": 1.0
+  },
+  "categories": [
+    "AI/ML Engineer",
+    "Contract position",
+    "Data Analyst",
+    "Data Scientist",
+    "DevOps Engineer",
+    "Fresher position",
+    "Full Stack Developer",
+    "HR Executive",
+    "Hybrid job",
+    "Internship",
+    "JD with missing location",
+    "JD with missing salary",
+    "Java Developer",
+    "Python Developer",
+    "QA Engineer",
+    "React Developer",
+    "Remote job",
+    "Sales Executive",
+    "Software Developer",
+    "UI/UX Designer"
+  ],
+  "required_categories_covered": true,
+  "rows": [
+    {
+      "id": "software_developer",
+      "category": "Software Developer",
+      "field_scores": {
+        "title": true,
+        "experience_min": true,
+        "experience_max": true,
+        "location": true,
+        "work_mode": true,
+        "employment_type": true,
+        "must_have_skills": true,
+        "preferred_skills": true,
+        "education": true,
+        "responsibilities": true,
+        "keywords": true
+      },
+      "list_recall": {
+        "must_have_skills": 1.0,
+        "preferred_skills": 1.0,
+        "education": 1.0,
+        "responsibilities": 1.0,
+        "keywords": 1.0
+      },
+      "accuracy": 1.0,
+      "case_pass": true,
+      "predicted": {
+        "job_title": "Software Developer",
+        "experience_min": 3.0,
+        "experience_max": 5.0,
+        "location": "Bengaluru, India",
+        "work_mode": "Hybrid",
+        "employment_type": "Full-time",
+        "must_have_skills": [
+          "Java",
+          "SQL",
+          "Git"
+        ],
+        "preferred_skills": [
+          "AWS"
+        ],
+        "education": [
+          "Bachelor's in Computer Science"
+        ],
+        "responsibilities": [
+          "Build and maintain backend services"
+        ],
+        "keywords": [
+          "Java",
+          "SQL",
+          "Git",
+          "AWS"
+        ]
+      }
+    },
+    {
+      "id": "java_developer",
+      "category": "Java Developer",
+      "field_scores": {
+        "title": true,
+        "experience_min": true,
+        "experience_max": true,
+        "location": true,
+        "work_mode": true,
+        "employment_type": true,
+        "must_have_skills": true,
+        "preferred_skills": true,
+        "education": true,
+        "responsibilities": true,
+        "keywords": true
+      },
+      "list_recall": {
+        "must_have_skills": 1.0,
+        "preferred_skills": 1.0,
+        "education": 1.0,
+        "responsibilities": 1.0,
+        "keywords": 1.0
+      },
+      "accuracy": 1.0,
+      "case_pass": true,
+      "predicted": {
+        "job_title": "Java Developer",
+        "experience_min": 4.0,
+        "experience_max": null,
+        "location": "Pune",
+        "work_mode": "On-site",
+        "employment_type": "Full-time",
+        "must_have_skills": [
+          "Java",
+          "Spring Boot",
+          "Microservices",
+          "SQL"
+        ],
+        "preferred_skills": [
+          "Kafka",
+          "Redis"
+        ],
+        "education": [
+          "B.Tech / B.E."
+        ],
+        "responsibilities": [
+          "design REST APIs"
+        ],
+        "keywords": [
+          "Java",
+          "Spring Boot",
+          "Microservices",
+          "SQL",
+          "Kafka",
+          "Redis"
+        ]
+      }
+    },
+    {
+      "id": "python_developer",
+      "category": "Python Developer",
+      "field_scores": {
+        "title": true,
+        "experience_min": true,
+        "experience_max": true,
+        "location": true,
+        "work_mode": true,
+        "employment_type": true,
+        "must_have_skills": true,
+        "preferred_skills": true,
+        "education": true,
+        "responsibilities": true,
+        "keywords": true
+      },
+      "list_recall": {
+        "must_have_skills": 1.0,
+        "preferred_skills": 1.0,
+        "education": 1.0,
+        "responsibilities": 1.0,
+        "keywords": 1.0
+      },
+      "accuracy": 1.0,
+      "case_pass": true,
+      "predicted": {
+        "job_title": "Python Developer",
+        "experience_min": 2.0,
+        "experience_max": 4.0,
+        "location": "Hyderabad",
+        "work_mode": "Hybrid",
+        "employment_type": "Full-time",
+        "must_have_skills": [
+          "Python",
+          "Django",
+          "PostgreSQL",
+          "REST"
+        ],
+        "preferred_skills": [
+          "FastAPI",
+          "Redis"
+        ],
+        "education": [
+          "Any graduate"
+        ],
+        "responsibilities": [
+          "build APIs"
+        ],
+        "keywords": [
+          "Python",
+          "Django",
+          "PostgreSQL",
+          "REST",
+          "FastAPI",
+          "Redis"
+        ]
+      }
+    },
+    {
+      "id": "full_stack_developer",
+      "category": "Full Stack Developer",
+      "field_scores": {
+        "title": true,
+        "experience_min": true,
+        "experience_max": true,
+        "location": true,
+        "work_mode": true,
+        "employment_type": true,
+        "must_have_skills": true,
+        "preferred_skills": true,
+        "education": true,
+        "responsibilities": true,
+        "keywords": true
+      },
+      "list_recall": {
+        "must_have_skills": 1.0,
+        "preferred_skills": 1.0,
+        "education": 1.0,
+        "responsibilities": 1.0,
+        "keywords": 1.0
+      },
+      "accuracy": 1.0,
+      "case_pass": true,
+      "predicted": {
+        "job_title": "Full Stack Developer",
+        "experience_min": 3.0,
+        "experience_max": null,
+        "location": "Gurgaon, Haryana",
+        "work_mode": "On-site",
+        "employment_type": "Full-time",
+        "must_have_skills": [
+          "React",
+          "Node.js",
+          "TypeScript",
+          "MongoDB"
+        ],
+        "preferred_skills": [
+          "GraphQL",
+          "Docker"
+        ],
+        "education": [
+          "Bachelor's degree"
+        ],
+        "responsibilities": [
+          "deliver end-to-end features"
+        ],
+        "keywords": [
+          "React",
+          "Node.js",
+          "TypeScript",
+          "MongoDB",
+          "GraphQL",
+          "Docker"
+        ]
+      }
+    },
+    {
+      "id": "react_developer",
+      "category": "React Developer",
+      "field_scores": {
+        "title": true,
+        "experience_min": true,
+        "experience_max": true,
+        "location": true,
+        "work_mode": true,
+        "employment_type": true,
+        "must_have_skills": true,
+        "preferred_skills": true,
+        "education": true,
+        "responsibilities": true,
+        "keywords": true
+      },
+      "list_recall": {
+        "must_have_skills": 1.0,
+        "preferred_skills": 1.0,
+        "education": 1.0,
+        "responsibilities": 1.0,
+        "keywords": 1.0
+      },
+      "accuracy": 1.0,
+      "case_pass": true,
+      "predicted": {
+        "job_title": "React Developer",
+        "experience_min": 1.0,
+        "experience_max": 3.0,
+        "location": null,
+        "work_mode": "Remote",
+        "employment_type": "Full-time",
+        "must_have_skills": [
+          "React",
+          "JavaScript",
+          "HTML",
+          "CSS"
+        ],
+        "preferred_skills": [
+          "Next.js",
+          "Redux"
+        ],
+        "education": [
+          "Bachelor's preferred"
+        ],
+        "responsibilities": [
+          "Build reusable UI components"
+        ],
+        "keywords": [
+          "React",
+          "JavaScript",
+          "HTML",
+          "CSS",
+          "Next.js",
+          "Redux"
+        ]
+      }
+    },
+    {
+      "id": "ai_ml_engineer",
+      "category": "AI/ML Engineer",
+      "field_scores": {
+        "title": true,
+        "experience_min": true,
+        "experience_max": true,
+        "location": true,
+        "work_mode": true,
+        "employment_type": true,
+        "must_have_skills": true,
+        "preferred_skills": true,
+        "education": true,
+        "responsibilities": true,
+        "keywords": true
+      },
+      "list_recall": {
+        "must_have_skills": 1.0,
+        "preferred_skills": 1.0,
+        "education": 1.0,
+        "responsibilities": 1.0,
+        "keywords": 1.0
+      },
+      "accuracy": 1.0,
+      "case_pass": true,
+      "predicted": {
+        "job_title": "AI/ML Engineer",
+        "experience_min": 5.0,
+        "experience_max": 8.0,
+        "location": "Bengaluru",
+        "work_mode": "On-site",
+        "employment_type": "Full-time",
+        "must_have_skills": [
+          "Python",
+          "TensorFlow",
+          "PyTorch",
+          "NLP"
+        ],
+        "preferred_skills": [
+          "LangChain",
+          "Kubernetes"
+        ],
+        "education": [
+          "Master's in CS / AI preferred"
+        ],
+        "responsibilities": [
+          "train models"
+        ],
+        "keywords": [
+          "Python",
+          "NLP",
+          "Kubernetes",
+          "TensorFlow",
+          "PyTorch",
+          "LangChain"
+        ]
+      }
+    },
+    {
+      "id": "data_analyst",
+      "category": "Data Analyst",
+      "field_scores": {
+        "title": true,
+        "experience_min": true,
+        "experience_max": true,
+        "location": true,
+        "work_mode": true,
+        "employment_type": true,
+        "must_have_skills": true,
+        "preferred_skills": true,
+        "education": true,
+        "responsibilities": true,
+        "keywords": true
+      },
+      "list_recall": {
+        "must_have_skills": 1.0,
+        "preferred_skills": 1.0,
+        "education": 1.0,
+        "responsibilities": 1.0,
+        "keywords": 1.0
+      },
+      "accuracy": 1.0,
+      "case_pass": true,
+      "predicted": {
+        "job_title": "Data Analyst",
+        "experience_min": 2.0,
+        "experience_max": null,
+        "location": "Mumbai",
+        "work_mode": "Hybrid",
+        "employment_type": "Full-time",
+        "must_have_skills": [
+          "SQL",
+          "Excel",
+          "Tableau"
+        ],
+        "preferred_skills": [
+          "Python",
+          "Power BI"
+        ],
+        "education": [
+          "Bachelor's in Statistics, Economics, or related field"
+        ],
+        "responsibilities": [
+          "build dashboards"
+        ],
+        "keywords": [
+          "SQL",
+          "Excel",
+          "Tableau",
+          "Python",
+          "Power BI"
+        ]
+      }
+    },
+    {
+      "id": "data_scientist",
+      "category": "Data Scientist",
+      "field_scores": {
+        "title": true,
+        "experience_min": true,
+        "experience_max": true,
+        "location": true,
+        "work_mode": true,
+        "employment_type": true,
+        "must_have_skills": true,
+        "preferred_skills": true,
+        "education": true,
+        "responsibilities": true,
+        "keywords": true
+      },
+      "list_recall": {
+        "must_have_skills": 1.0,
+        "preferred_skills": 1.0,
+        "education": 1.0,
+        "responsibilities": 1.0,
+        "keywords": 1.0
+      },
+      "accuracy": 1.0,
+      "case_pass": true,
+      "predicted": {
+        "job_title": "Data Scientist",
+        "experience_min": 4.0,
+        "experience_max": 6.0,
+        "location": null,
+        "work_mode": "Remote",
+        "employment_type": "Full-time",
+        "must_have_skills": [
+          "Python",
+          "scikit-learn",
+          "SQL",
+          "statistics"
+        ],
+        "preferred_skills": [
+          "Spark",
+          "AWS"
+        ],
+        "education": [
+          "Master's preferred"
+        ],
+        "responsibilities": [
+          "Own experimentation"
+        ],
+        "keywords": [
+          "Python",
+          "scikit-learn",
+          "SQL",
+          "statistics",
+          "Spark",
+          "AWS"
+        ]
+      }
+    },
+    {
+      "id": "devops_engineer",
+      "category": "DevOps Engineer",
+      "field_scores": {
+        "title": true,
+        "experience_min": true,
+        "experience_max": true,
+        "location": true,
+        "work_mode": true,
+        "employment_type": true,
+        "must_have_skills": true,
+        "preferred_skills": true,
+        "education": true,
+        "responsibilities": true,
+        "keywords": true
+      },
+      "list_recall": {
+        "must_have_skills": 1.0,
+        "preferred_skills": 1.0,
+        "education": 1.0,
+        "responsibilities": 1.0,
+        "keywords": 1.0
+      },
+      "accuracy": 1.0,
+      "case_pass": true,
+      "predicted": {
+        "job_title": "DevOps Engineer",
+        "experience_min": 3.0,
+        "experience_max": 5.0,
+        "location": "Pune",
+        "work_mode": "Hybrid",
+        "employment_type": "Full-time",
+        "must_have_skills": [
+          "Docker",
+          "Kubernetes",
+          "Terraform",
+          "CI/CD"
+        ],
+        "preferred_skills": [
+          "AWS",
+          "Ansible"
+        ],
+        "education": [
+          "B.E. / B.Tech"
+        ],
+        "responsibilities": [
+          "maintain pipelines"
+        ],
+        "keywords": [
+          "Docker",
+          "Kubernetes",
+          "Terraform",
+          "CI/CD",
+          "AWS",
+          "Ansible"
+        ]
+      }
+    },
+    {
+      "id": "qa_engineer",
+      "category": "QA Engineer",
+      "field_scores": {
+        "title": true,
+        "experience_min": true,
+        "experience_max": true,
+        "location": true,
+        "work_mode": true,
+        "employment_type": true,
+        "must_have_skills": true,
+        "preferred_skills": true,
+        "education": true,
+        "responsibilities": true,
+        "keywords": true
+      },
+      "list_recall": {
+        "must_have_skills": 1.0,
+        "preferred_skills": 1.0,
+        "education": 1.0,
+        "responsibilities": 1.0,
+        "keywords": 1.0
+      },
+      "accuracy": 1.0,
+      "case_pass": true,
+      "predicted": {
+        "job_title": "QA Engineer",
+        "experience_min": 1.0,
+        "experience_max": 3.0,
+        "location": "Chennai",
+        "work_mode": "On-site",
+        "employment_type": "Full-time",
+        "must_have_skills": [
+          "Selenium",
+          "Java",
+          "TestNG"
+        ],
+        "preferred_skills": [
+          "Cypress",
+          "API testing"
+        ],
+        "education": [
+          "Bachelor's"
+        ],
+        "responsibilities": [
+          "Write test cases"
+        ],
+        "keywords": [
+          "Selenium",
+          "Java",
+          "TestNG",
+          "Cypress",
+          "API testing"
+        ]
+      }
+    },
+    {
+      "id": "ui_ux_designer",
+      "category": "UI/UX Designer",
+      "field_scores": {
+        "title": true,
+        "experience_min": true,
+        "experience_max": true,
+        "location": true,
+        "work_mode": true,
+        "employment_type": true,
+        "must_have_skills": true,
+        "preferred_skills": true,
+        "education": true,
+        "responsibilities": true,
+        "keywords": true
+      },
+      "list_recall": {
+        "must_have_skills": 1.0,
+        "preferred_skills": 1.0,
+        "education": 1.0,
+        "responsibilities": 1.0,
+        "keywords": 1.0
+      },
+      "accuracy": 1.0,
+      "case_pass": true,
+      "predicted": {
+        "job_title": "UI/UX Designer",
+        "experience_min": 2.0,
+        "experience_max": null,
+        "location": "Hyderabad",
+        "work_mode": "Hybrid",
+        "employment_type": "Full-time",
+        "must_have_skills": [
+          "Figma",
+          "user research",
+          "wireframing"
+        ],
+        "preferred_skills": [
+          "HTML",
+          "CSS",
+          "prototyping"
+        ],
+        "education": [
+          "Design degree preferred"
+        ],
+        "responsibilities": [
+          "Create user flows"
+        ],
+        "keywords": [
+          "Figma",
+          "user research",
+          "wireframing",
+          "HTML",
+          "CSS",
+          "prototyping"
+        ]
+      }
+    },
+    {
+      "id": "hr_executive",
+      "category": "HR Executive",
+      "field_scores": {
+        "title": true,
+        "experience_min": true,
+        "experience_max": true,
+        "location": true,
+        "work_mode": true,
+        "employment_type": true,
+        "must_have_skills": true,
+        "preferred_skills": true,
+        "education": true,
+        "responsibilities": true,
+        "keywords": true
+      },
+      "list_recall": {
+        "must_have_skills": 1.0,
+        "preferred_skills": 1.0,
+        "education": 1.0,
+        "responsibilities": 1.0,
+        "keywords": 1.0
+      },
+      "accuracy": 1.0,
+      "case_pass": true,
+      "predicted": {
+        "job_title": "HR Executive",
+        "experience_min": 1.0,
+        "experience_max": 3.0,
+        "location": "Delhi NCR",
+        "work_mode": "On-site",
+        "employment_type": "Full-time",
+        "must_have_skills": [
+          "recruitment",
+          "onboarding",
+          "Excel",
+          "payroll coordination"
+        ],
+        "preferred_skills": [
+          "HRMS",
+          "labour law basics"
+        ],
+        "education": [
+          "MBA / PGDM in HR"
+        ],
+        "responsibilities": [
+          "screen candidates"
+        ],
+        "keywords": [
+          "recruitment",
+          "Excel",
+          "onboarding",
+          "payroll coordination",
+          "HRMS",
+          "labour law basics"
+        ]
+      }
+    },
+    {
+      "id": "sales_executive",
+      "category": "Sales Executive",
+      "field_scores": {
+        "title": true,
+        "experience_min": true,
+        "experience_max": true,
+        "location": true,
+        "work_mode": true,
+        "employment_type": true,
+        "must_have_skills": true,
+        "preferred_skills": true,
+        "education": true,
+        "responsibilities": true,
+        "keywords": true
+      },
+      "list_recall": {
+        "must_have_skills": 1.0,
+        "preferred_skills": 1.0,
+        "education": 1.0,
+        "responsibilities": 1.0,
+        "keywords": 1.0
+      },
+      "accuracy": 1.0,
+      "case_pass": true,
+      "predicted": {
+        "job_title": "Sales Executive",
+        "experience_min": 0.0,
+        "experience_max": 2.0,
+        "location": "Jaipur",
+        "work_mode": "Hybrid",
+        "employment_type": "Full-time",
+        "must_have_skills": [
+          "lead generation",
+          "CRM",
+          "negotiation"
+        ],
+        "preferred_skills": [
+          "Salesforce"
+        ],
+        "education": [
+          "Any graduate"
+        ],
+        "responsibilities": [
+          "Meet clients"
+        ],
+        "keywords": [
+          "CRM",
+          "lead generation",
+          "negotiation",
+          "Salesforce"
+        ]
+      }
+    },
+    {
+      "id": "internship",
+      "category": "Internship",
+      "field_scores": {
+        "title": true,
+        "experience_min": true,
+        "experience_max": true,
+        "location": true,
+        "work_mode": true,
+        "employment_type": true,
+        "must_have_skills": true,
+        "preferred_skills": true,
+        "education": true,
+        "responsibilities": true,
+        "keywords": true
+      },
+      "list_recall": {
+        "must_have_skills": 1.0,
+        "preferred_skills": 1.0,
+        "education": 1.0,
+        "responsibilities": 1.0,
+        "keywords": 1.0
+      },
+      "accuracy": 1.0,
+      "case_pass": true,
+      "predicted": {
+        "job_title": "Software Engineering Intern",
+        "experience_min": 0.0,
+        "experience_max": 1.0,
+        "location": "Bengaluru",
+        "work_mode": "Hybrid",
+        "employment_type": "Internship",
+        "must_have_skills": [
+          "Python",
+          "Git",
+          "SQL"
+        ],
+        "preferred_skills": [
+          "React"
+        ],
+        "education": [
+          "currently pursuing B.Tech"
+        ],
+        "responsibilities": [
+          "write tests"
+        ],
+        "keywords": [
+          "Python",
+          "Git",
+          "SQL",
+          "React"
+        ]
+      }
+    },
+    {
+      "id": "fresher_position",
+      "category": "Fresher position",
+      "field_scores": {
+        "title": true,
+        "experience_min": true,
+        "experience_max": true,
+        "location": true,
+        "work_mode": true,
+        "employment_type": true,
+        "must_have_skills": true,
+        "preferred_skills": true,
+        "education": true,
+        "responsibilities": true,
+        "keywords": true
+      },
+      "list_recall": {
+        "must_have_skills": 1.0,
+        "preferred_skills": 1.0,
+        "education": 1.0,
+        "responsibilities": 1.0,
+        "keywords": 1.0
+      },
+      "accuracy": 1.0,
+      "case_pass": true,
+      "predicted": {
+        "job_title": "Graduate Trainee \u2014 Software Development",
+        "experience_min": 0.0,
+        "experience_max": 1.0,
+        "location": "Chennai",
+        "work_mode": "On-site",
+        "employment_type": "Full-time",
+        "must_have_skills": [
+          "Java or Python",
+          "SQL",
+          "good communication"
+        ],
+        "preferred_skills": [
+          "data structures"
+        ],
+        "education": [
+          "B.E. / B.Tech 2024 or 2025 batch"
+        ],
+        "responsibilities": [
+          "complete training modules"
+        ],
+        "keywords": [
+          "SQL",
+          "Java or Python",
+          "good communication",
+          "data structures"
+        ]
+      }
+    },
+    {
+      "id": "remote_job",
+      "category": "Remote job",
+      "field_scores": {
+        "title": true,
+        "experience_min": true,
+        "experience_max": true,
+        "location": true,
+        "work_mode": true,
+        "employment_type": true,
+        "must_have_skills": true,
+        "preferred_skills": true,
+        "education": true,
+        "responsibilities": true,
+        "keywords": true
+      },
+      "list_recall": {
+        "must_have_skills": 1.0,
+        "preferred_skills": 1.0,
+        "education": 1.0,
+        "responsibilities": 1.0,
+        "keywords": 1.0
+      },
+      "accuracy": 1.0,
+      "case_pass": true,
+      "predicted": {
+        "job_title": "Backend Engineer",
+        "experience_min": 4.0,
+        "experience_max": null,
+        "location": null,
+        "work_mode": "Remote",
+        "employment_type": "Full-time",
+        "must_have_skills": [
+          "Go",
+          "PostgreSQL",
+          "gRPC"
+        ],
+        "preferred_skills": [
+          "Kubernetes"
+        ],
+        "education": [],
+        "responsibilities": [
+          "Design distributed services"
+        ],
+        "keywords": [
+          "Go",
+          "PostgreSQL",
+          "gRPC",
+          "Kubernetes"
+        ]
+      }
+    },
+    {
+      "id": "hybrid_job",
+      "category": "Hybrid job",
+      "field_scores": {
+        "title": true,
+        "experience_min": true,
+        "experience_max": true,
+        "location": true,
+        "work_mode": true,
+        "employment_type": true,
+        "must_have_skills": true,
+        "preferred_skills": true,
+        "education": true,
+        "responsibilities": true,
+        "keywords": true
+      },
+      "list_recall": {
+        "must_have_skills": 1.0,
+        "preferred_skills": 1.0,
+        "education": 1.0,
+        "responsibilities": 1.0,
+        "keywords": 1.0
+      },
+      "accuracy": 1.0,
+      "case_pass": true,
+      "predicted": {
+        "job_title": "Python Developer",
+        "experience_min": 2.0,
+        "experience_max": 4.0,
+        "location": "Noida",
+        "work_mode": "Hybrid",
+        "employment_type": "Full-time",
+        "must_have_skills": [
+          "Python",
+          "FastAPI",
+          "SQL"
+        ],
+        "preferred_skills": [
+          "Docker"
+        ],
+        "education": [
+          "Bachelor's"
+        ],
+        "responsibilities": [
+          "Ship APIs"
+        ],
+        "keywords": [
+          "Python",
+          "FastAPI",
+          "SQL",
+          "Docker"
+        ]
+      }
+    },
+    {
+      "id": "contract_position",
+      "category": "Contract position",
+      "field_scores": {
+        "title": true,
+        "experience_min": true,
+        "experience_max": true,
+        "location": true,
+        "work_mode": true,
+        "employment_type": true,
+        "must_have_skills": true,
+        "preferred_skills": true,
+        "education": true,
+        "responsibilities": true,
+        "keywords": true
+      },
+      "list_recall": {
+        "must_have_skills": 1.0,
+        "preferred_skills": 1.0,
+        "education": 1.0,
+        "responsibilities": 1.0,
+        "keywords": 1.0
+      },
+      "accuracy": 1.0,
+      "case_pass": true,
+      "predicted": {
+        "job_title": "Contract Data Engineer",
+        "experience_min": 2.0,
+        "experience_max": null,
+        "location": null,
+        "work_mode": "Remote",
+        "employment_type": "Contract",
+        "must_have_skills": [
+          "SQL",
+          "Airflow",
+          "Snowflake"
+        ],
+        "preferred_skills": [
+          "dbt",
+          "Python"
+        ],
+        "education": [
+          "equivalent experience accepted"
+        ],
+        "responsibilities": [
+          "Build pipelines"
+        ],
+        "keywords": [
+          "SQL",
+          "Airflow",
+          "Snowflake",
+          "dbt",
+          "Python"
+        ]
+      }
+    },
+    {
+      "id": "missing_salary",
+      "category": "JD with missing salary",
+      "field_scores": {
+        "title": true,
+        "experience_min": true,
+        "experience_max": true,
+        "location": true,
+        "work_mode": true,
+        "employment_type": true,
+        "must_have_skills": true,
+        "preferred_skills": true,
+        "education": true,
+        "responsibilities": true,
+        "keywords": true
+      },
+      "list_recall": {
+        "must_have_skills": 1.0,
+        "preferred_skills": 1.0,
+        "education": 1.0,
+        "responsibilities": 1.0,
+        "keywords": 1.0
+      },
+      "accuracy": 1.0,
+      "case_pass": true,
+      "predicted": {
+        "job_title": "Python Developer",
+        "experience_min": 3.0,
+        "experience_max": 5.0,
+        "location": "Pune",
+        "work_mode": "Hybrid",
+        "employment_type": "Full-time",
+        "must_have_skills": [
+          "Python",
+          "Django",
+          "REST"
+        ],
+        "preferred_skills": [
+          "Celery"
+        ],
+        "education": [
+          "Bachelor's"
+        ],
+        "responsibilities": [
+          "Build web services"
+        ],
+        "keywords": [
+          "Python",
+          "Django",
+          "REST",
+          "Celery"
+        ]
+      }
+    },
+    {
+      "id": "missing_location",
+      "category": "JD with missing location",
+      "field_scores": {
+        "title": true,
+        "experience_min": true,
+        "experience_max": true,
+        "location": true,
+        "work_mode": true,
+        "employment_type": true,
+        "must_have_skills": true,
+        "preferred_skills": true,
+        "education": true,
+        "responsibilities": true,
+        "keywords": true
+      },
+      "list_recall": {
+        "must_have_skills": 1.0,
+        "preferred_skills": 1.0,
+        "education": 1.0,
+        "responsibilities": 1.0,
+        "keywords": 1.0
+      },
+      "accuracy": 1.0,
+      "case_pass": true,
+      "predicted": {
+        "job_title": "Product Analyst",
+        "experience_min": 3.0,
+        "experience_max": 5.0,
+        "location": null,
+        "work_mode": "Hybrid",
+        "employment_type": "Full-time",
+        "must_have_skills": [
+          "SQL",
+          "Excel",
+          "product sense"
+        ],
+        "preferred_skills": [
+          "Amplitude"
+        ],
+        "education": [
+          "Bachelor's"
+        ],
+        "responsibilities": [
+          "Define metrics"
+        ],
+        "keywords": [
+          "SQL",
+          "Excel",
+          "product sense",
+          "Amplitude"
+        ]
+      }
+    },
+    {
+      "id": "freelance_writer_adjacent",
+      "category": "Contract position",
+      "field_scores": {
+        "title": true,
+        "experience_min": true,
+        "experience_max": true,
+        "location": true,
+        "work_mode": true,
+        "employment_type": true,
+        "must_have_skills": true,
+        "preferred_skills": true,
+        "education": true,
+        "responsibilities": true,
+        "keywords": true
+      },
+      "list_recall": {
+        "must_have_skills": 1.0,
+        "preferred_skills": 1.0,
+        "education": 1.0,
+        "responsibilities": 1.0,
+        "keywords": 1.0
+      },
+      "accuracy": 1.0,
+      "case_pass": true,
+      "predicted": {
+        "job_title": "Freelance Technical Writer",
+        "experience_min": 2.0,
+        "experience_max": null,
+        "location": null,
+        "work_mode": "Remote",
+        "employment_type": "Freelance",
+        "must_have_skills": [
+          "technical writing",
+          "Markdown",
+          "REST APIs"
+        ],
+        "preferred_skills": [
+          "OpenAPI",
+          "Python"
+        ],
+        "education": [],
+        "responsibilities": [
+          "Write developer docs"
+        ],
+        "keywords": [
+          "Markdown",
+          "technical writing",
+          "REST APIs",
+          "OpenAPI",
+          "Python"
+        ]
+      }
+    },
+    {
+      "id": "part_time_support",
+      "category": "Hybrid job",
+      "field_scores": {
+        "title": true,
+        "experience_min": true,
+        "experience_max": true,
+        "location": true,
+        "work_mode": true,
+        "employment_type": true,
+        "must_have_skills": true,
+        "preferred_skills": true,
+        "education": true,
+        "responsibilities": true,
+        "keywords": true
+      },
+      "list_recall": {
+        "must_have_skills": 1.0,
+        "preferred_skills": 1.0,
+        "education": 1.0,
+        "responsibilities": 1.0,
+        "keywords": 1.0
+      },
+      "accuracy": 1.0,
+      "case_pass": true,
+      "predicted": {
+        "job_title": "Customer Support Specialist",
+        "experience_min": 1.0,
+        "experience_max": 3.0,
+        "location": "Kolkata",
+        "work_mode": "Hybrid",
+        "employment_type": "Part-time",
+        "must_have_skills": [
+          "communication",
+          "Zendesk",
+          "English"
+        ],
+        "preferred_skills": [
+          "SQL"
+        ],
+        "education": [
+          "Any graduate"
+        ],
+        "responsibilities": [
+          "Resolve tickets"
+        ],
+        "keywords": [
+          "Zendesk",
+          "communication",
+          "English",
+          "SQL"
+        ]
+      }
+    }
+  ]
+}

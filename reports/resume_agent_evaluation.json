@@ -1,0 +1,1331 @@
+{
+  "mode": "offline_noisy_llm_plus_normalization",
+  "n_cases": 11,
+  "cases_passed": 11,
+  "overall_field_accuracy": 1.0,
+  "field_accuracy": {
+    "name": 1.0,
+    "skills": 1.0,
+    "experience": 1.0,
+    "education": 1.0,
+    "job_titles": 1.0,
+    "companies": 1.0,
+    "projects": 1.0,
+    "certifications": 1.0,
+    "location": 1.0,
+    "availability": 1.0,
+    "email": 1.0,
+    "phone": 1.0
+  },
+  "categories": [
+    "AI/ML engineer",
+    "Data scientist",
+    "Fresh graduate",
+    "Missing email",
+    "Missing phone",
+    "Multiple companies",
+    "Multiple projects",
+    "Senior candidate",
+    "Software engineer",
+    "Unclear experience dates"
+  ],
+  "required_categories_covered": true,
+  "rows": [
+    {
+      "id": "software_engineer",
+      "category": "Software engineer",
+      "field_scores": {
+        "name": true,
+        "skills": true,
+        "experience": true,
+        "education": true,
+        "job_titles": true,
+        "companies": true,
+        "projects": true,
+        "certifications": true,
+        "location": true,
+        "availability": true
+      },
+      "field_status": {
+        "name": "passed",
+        "skills": "passed",
+        "experience": "passed",
+        "education": "passed",
+        "job_titles": "passed",
+        "companies": "passed",
+        "projects": "passed",
+        "certifications": "passed",
+        "location": "passed",
+        "availability": "passed"
+      },
+      "passed_fields": [
+        "name",
+        "skills",
+        "experience",
+        "education",
+        "job_titles",
+        "companies",
+        "projects",
+        "certifications",
+        "location",
+        "availability"
+      ],
+      "failed_fields": [],
+      "missing_fields": [],
+      "list_recall": {
+        "skills": 1.0,
+        "education": 1.0,
+        "job_titles": 1.0,
+        "companies": 1.0,
+        "projects": 1.0,
+        "certifications": 1.0
+      },
+      "accuracy": 1.0,
+      "case_pass": true,
+      "predicted": {
+        "candidate_id": null,
+        "full_name": "Priya Shah",
+        "email": "priya.shah@example.com",
+        "phone": "98111 22334",
+        "location": "Bengaluru, India",
+        "current_job_title": "Software Engineer",
+        "total_experience_years": 5.0,
+        "skills": [
+          "Python",
+          "FastAPI"
+        ],
+        "technical_skills": [
+          "Python",
+          "FastAPI"
+        ],
+        "soft_skills": [],
+        "education": [
+          {
+            "institution": "RV College of Engineering",
+            "degree": "B.Tech",
+            "field": "Computer Science",
+            "start_year": null,
+            "end_year": null
+          }
+        ],
+        "certifications": [
+          {
+            "name": "AWS Certified Developer",
+            "issuer": "Amazon",
+            "year": null
+          }
+        ],
+        "companies": [
+          "Nimbus Labs"
+        ],
+        "previous_roles": [
+          {
+            "title": "Software Engineer",
+            "company": "Nimbus Labs",
+            "start_date": null,
+            "end_date": null,
+            "highlights": []
+          }
+        ],
+        "projects": [
+          {
+            "name": "Order Service",
+            "description": null,
+            "technologies": [
+              "Python"
+            ]
+          }
+        ],
+        "achievements": [],
+        "industries": [],
+        "notice_period": null,
+        "availability": "Immediate",
+        "work_authorization": null,
+        "resume_summary": null,
+        "resume_source": null,
+        "resume_file_name": null
+      }
+    },
+    {
+      "id": "ai_ml_engineer",
+      "category": "AI/ML engineer",
+      "field_scores": {
+        "name": true,
+        "skills": true,
+        "experience": true,
+        "education": true,
+        "job_titles": true,
+        "companies": true,
+        "projects": true,
+        "certifications": true,
+        "location": true,
+        "availability": true
+      },
+      "field_status": {
+        "name": "passed",
+        "skills": "passed",
+        "experience": "passed",
+        "education": "passed",
+        "job_titles": "passed",
+        "companies": "passed",
+        "projects": "passed",
+        "certifications": "passed",
+        "location": "passed",
+        "availability": "passed"
+      },
+      "passed_fields": [
+        "name",
+        "skills",
+        "experience",
+        "education",
+        "job_titles",
+        "companies",
+        "projects",
+        "certifications",
+        "location",
+        "availability"
+      ],
+      "failed_fields": [],
+      "missing_fields": [],
+      "list_recall": {
+        "skills": 1.0,
+        "education": 1.0,
+        "job_titles": 1.0,
+        "companies": 1.0,
+        "projects": 1.0,
+        "certifications": 1.0
+      },
+      "accuracy": 1.0,
+      "case_pass": true,
+      "predicted": {
+        "candidate_id": null,
+        "full_name": "Rahul Mehta",
+        "email": "rahul.mehta@example.com",
+        "phone": null,
+        "location": "Hyderabad",
+        "current_job_title": "ML Engineer",
+        "total_experience_years": 4.0,
+        "skills": [
+          "Python",
+          "TensorFlow",
+          "PyTorch",
+          "Kubernetes",
+          "Communication"
+        ],
+        "technical_skills": [
+          "Python",
+          "TensorFlow",
+          "PyTorch",
+          "Kubernetes"
+        ],
+        "soft_skills": [
+          "Communication"
+        ],
+        "education": [
+          {
+            "institution": "IIIT Hyderabad",
+            "degree": "M.Tech",
+            "field": "Machine Learning",
+            "start_year": null,
+            "end_year": null
+          }
+        ],
+        "certifications": [
+          {
+            "name": "TensorFlow Developer Certificate",
+            "issuer": "Google",
+            "year": null
+          }
+        ],
+        "companies": [
+          "VectorAI"
+        ],
+        "previous_roles": [
+          {
+            "title": "ML Engineer",
+            "company": "VectorAI",
+            "start_date": null,
+            "end_date": null,
+            "highlights": []
+          }
+        ],
+        "projects": [
+          {
+            "name": "Resume Ranker",
+            "description": null,
+            "technologies": [
+              "PyTorch"
+            ]
+          }
+        ],
+        "achievements": [],
+        "industries": [],
+        "notice_period": "60 days",
+        "availability": null,
+        "work_authorization": null,
+        "resume_summary": null,
+        "resume_source": null,
+        "resume_file_name": null
+      }
+    },
+    {
+      "id": "data_scientist",
+      "category": "Data scientist",
+      "field_scores": {
+        "name": true,
+        "skills": true,
+        "experience": true,
+        "education": true,
+        "job_titles": true,
+        "companies": true,
+        "projects": true,
+        "certifications": true,
+        "location": true,
+        "availability": true
+      },
+      "field_status": {
+        "name": "passed",
+        "skills": "passed",
+        "experience": "passed",
+        "education": "passed",
+        "job_titles": "passed",
+        "companies": "passed",
+        "projects": "passed",
+        "certifications": "passed",
+        "location": "passed",
+        "availability": "passed"
+      },
+      "passed_fields": [
+        "name",
+        "skills",
+        "experience",
+        "education",
+        "job_titles",
+        "companies",
+        "projects",
+        "certifications",
+        "location",
+        "availability"
+      ],
+      "failed_fields": [],
+      "missing_fields": [],
+      "list_recall": {
+        "skills": 1.0,
+        "education": 1.0,
+        "job_titles": 1.0,
+        "companies": 1.0,
+        "projects": 1.0,
+        "certifications": 1.0
+      },
+      "accuracy": 1.0,
+      "case_pass": true,
+      "predicted": {
+        "candidate_id": null,
+        "full_name": "Ananya Rao",
+        "email": "ananya.rao@example.com",
+        "phone": "99000 11122",
+        "location": "Pune, India",
+        "current_job_title": "Data Scientist",
+        "total_experience_years": 3.0,
+        "skills": [
+          "Python",
+          "SQL",
+          "scikit-learn",
+          "Power BI"
+        ],
+        "technical_skills": [
+          "Python",
+          "SQL",
+          "scikit-learn",
+          "Power BI"
+        ],
+        "soft_skills": [],
+        "education": [
+          {
+            "institution": "Savitribai Phule Pune University",
+            "degree": "M.Sc",
+            "field": "Statistics",
+            "start_year": null,
+            "end_year": null
+          }
+        ],
+        "certifications": [
+          {
+            "name": "Google Data Analytics",
+            "issuer": "Google",
+            "year": null
+          }
+        ],
+        "companies": [
+          "InsightWorks"
+        ],
+        "previous_roles": [
+          {
+            "title": "Data Scientist",
+            "company": "InsightWorks",
+            "start_date": null,
+            "end_date": null,
+            "highlights": []
+          }
+        ],
+        "projects": [
+          {
+            "name": "Churn Model",
+            "description": null,
+            "technologies": [
+              "scikit-learn"
+            ]
+          }
+        ],
+        "achievements": [],
+        "industries": [],
+        "notice_period": null,
+        "availability": null,
+        "work_authorization": null,
+        "resume_summary": null,
+        "resume_source": null,
+        "resume_file_name": null
+      }
+    },
+    {
+      "id": "fresh_graduate",
+      "category": "Fresh graduate",
+      "field_scores": {
+        "name": true,
+        "skills": true,
+        "experience": true,
+        "education": true,
+        "job_titles": true,
+        "companies": true,
+        "projects": true,
+        "certifications": true,
+        "location": true,
+        "availability": true
+      },
+      "field_status": {
+        "name": "passed",
+        "skills": "passed",
+        "experience": "passed",
+        "education": "passed",
+        "job_titles": "passed",
+        "companies": "passed",
+        "projects": "passed",
+        "certifications": "passed",
+        "location": "passed",
+        "availability": "passed"
+      },
+      "passed_fields": [
+        "name",
+        "skills",
+        "experience",
+        "education",
+        "job_titles",
+        "companies",
+        "projects",
+        "certifications",
+        "location",
+        "availability"
+      ],
+      "failed_fields": [],
+      "missing_fields": [],
+      "list_recall": {
+        "skills": 1.0,
+        "education": 1.0,
+        "job_titles": 1.0,
+        "companies": 1.0,
+        "projects": 1.0,
+        "certifications": 1.0
+      },
+      "accuracy": 1.0,
+      "case_pass": true,
+      "predicted": {
+        "candidate_id": null,
+        "full_name": "Arjun Nair",
+        "email": "arjun.nair@example.com",
+        "phone": null,
+        "location": "Chennai",
+        "current_job_title": "Software Intern",
+        "total_experience_years": null,
+        "skills": [
+          "Python",
+          "React",
+          "SQL"
+        ],
+        "technical_skills": [
+          "Python",
+          "React",
+          "SQL"
+        ],
+        "soft_skills": [],
+        "education": [
+          {
+            "institution": "Anna University",
+            "degree": "B.E.",
+            "field": "Computer Science",
+            "start_year": null,
+            "end_year": 2024
+          }
+        ],
+        "certifications": [],
+        "companies": [
+          "BrightApps"
+        ],
+        "previous_roles": [
+          {
+            "title": "Software Intern",
+            "company": "BrightApps",
+            "start_date": null,
+            "end_date": null,
+            "highlights": []
+          }
+        ],
+        "projects": [
+          {
+            "name": "Campus Portal",
+            "description": null,
+            "technologies": [
+              "React"
+            ]
+          }
+        ],
+        "achievements": [],
+        "industries": [],
+        "notice_period": null,
+        "availability": null,
+        "work_authorization": null,
+        "resume_summary": null,
+        "resume_source": null,
+        "resume_file_name": null
+      }
+    },
+    {
+      "id": "senior_candidate",
+      "category": "Senior candidate",
+      "field_scores": {
+        "name": true,
+        "skills": true,
+        "experience": true,
+        "education": true,
+        "job_titles": true,
+        "companies": true,
+        "projects": true,
+        "certifications": true,
+        "location": true,
+        "availability": true
+      },
+      "field_status": {
+        "name": "passed",
+        "skills": "passed",
+        "experience": "passed",
+        "education": "passed",
+        "job_titles": "passed",
+        "companies": "passed",
+        "projects": "passed",
+        "certifications": "passed",
+        "location": "passed",
+        "availability": "passed"
+      },
+      "passed_fields": [
+        "name",
+        "skills",
+        "experience",
+        "education",
+        "job_titles",
+        "companies",
+        "projects",
+        "certifications",
+        "location",
+        "availability"
+      ],
+      "failed_fields": [],
+      "missing_fields": [],
+      "list_recall": {
+        "skills": 1.0,
+        "education": 1.0,
+        "job_titles": 1.0,
+        "companies": 1.0,
+        "projects": 1.0,
+        "certifications": 1.0
+      },
+      "accuracy": 1.0,
+      "case_pass": true,
+      "predicted": {
+        "candidate_id": null,
+        "full_name": "Vikram Iyer",
+        "email": "vikram.iyer@example.com",
+        "phone": "98222 33445",
+        "location": "Mumbai",
+        "current_job_title": "Director of Engineering",
+        "total_experience_years": 12.0,
+        "skills": [
+          "Java",
+          "Kubernetes",
+          "leadership",
+          "mentoring"
+        ],
+        "technical_skills": [
+          "Java",
+          "Kubernetes"
+        ],
+        "soft_skills": [
+          "leadership",
+          "mentoring"
+        ],
+        "education": [
+          {
+            "institution": "IIT Bombay",
+            "degree": "B.Tech",
+            "field": null,
+            "start_year": null,
+            "end_year": null
+          }
+        ],
+        "certifications": [
+          {
+            "name": "CKA",
+            "issuer": "Cloud Native Computing Foundation",
+            "year": null
+          }
+        ],
+        "companies": [
+          "Northstar",
+          "Helio Systems"
+        ],
+        "previous_roles": [
+          {
+            "title": "Director of Engineering",
+            "company": "Northstar",
+            "start_date": null,
+            "end_date": null,
+            "highlights": []
+          },
+          {
+            "title": "Engineering Manager",
+            "company": "Helio Systems",
+            "start_date": null,
+            "end_date": null,
+            "highlights": []
+          }
+        ],
+        "projects": [
+          {
+            "name": "Platform Rebuild",
+            "description": null,
+            "technologies": [
+              "Kubernetes"
+            ]
+          }
+        ],
+        "achievements": [],
+        "industries": [],
+        "notice_period": null,
+        "availability": "September",
+        "work_authorization": null,
+        "resume_summary": null,
+        "resume_source": null,
+        "resume_file_name": null
+      }
+    },
+    {
+      "id": "missing_email",
+      "category": "Missing email",
+      "field_scores": {
+        "name": true,
+        "skills": true,
+        "experience": true,
+        "education": true,
+        "job_titles": true,
+        "companies": true,
+        "projects": true,
+        "certifications": true,
+        "location": true,
+        "availability": true,
+        "email": true
+      },
+      "field_status": {
+        "name": "passed",
+        "skills": "passed",
+        "experience": "passed",
+        "education": "passed",
+        "job_titles": "passed",
+        "companies": "passed",
+        "projects": "passed",
+        "certifications": "passed",
+        "location": "passed",
+        "availability": "passed",
+        "email": "passed"
+      },
+      "passed_fields": [
+        "name",
+        "skills",
+        "experience",
+        "education",
+        "job_titles",
+        "companies",
+        "projects",
+        "certifications",
+        "location",
+        "availability",
+        "email"
+      ],
+      "failed_fields": [],
+      "missing_fields": [],
+      "list_recall": {
+        "skills": 1.0,
+        "education": 1.0,
+        "job_titles": 1.0,
+        "companies": 1.0,
+        "projects": 1.0,
+        "certifications": 1.0
+      },
+      "accuracy": 1.0,
+      "case_pass": true,
+      "predicted": {
+        "candidate_id": null,
+        "full_name": "Neha Kulkarni",
+        "email": null,
+        "phone": "97654 32100",
+        "location": "Pune",
+        "current_job_title": "Frontend Engineer",
+        "total_experience_years": 2.0,
+        "skills": [
+          "React",
+          "TypeScript",
+          "CSS"
+        ],
+        "technical_skills": [
+          "React",
+          "TypeScript",
+          "CSS"
+        ],
+        "soft_skills": [],
+        "education": [
+          {
+            "institution": "Fergusson College",
+            "degree": "B.Sc",
+            "field": "Computer Science",
+            "start_year": null,
+            "end_year": null
+          }
+        ],
+        "certifications": [],
+        "companies": [
+          "Pixelhouse"
+        ],
+        "previous_roles": [
+          {
+            "title": "Frontend Engineer",
+            "company": "Pixelhouse",
+            "start_date": null,
+            "end_date": null,
+            "highlights": []
+          }
+        ],
+        "projects": [],
+        "achievements": [],
+        "industries": [],
+        "notice_period": null,
+        "availability": null,
+        "work_authorization": null,
+        "resume_summary": null,
+        "resume_source": null,
+        "resume_file_name": null
+      }
+    },
+    {
+      "id": "missing_phone",
+      "category": "Missing phone",
+      "field_scores": {
+        "name": true,
+        "skills": true,
+        "experience": true,
+        "education": true,
+        "job_titles": true,
+        "companies": true,
+        "projects": true,
+        "certifications": true,
+        "location": true,
+        "availability": true,
+        "phone": true
+      },
+      "field_status": {
+        "name": "passed",
+        "skills": "passed",
+        "experience": "passed",
+        "education": "passed",
+        "job_titles": "passed",
+        "companies": "passed",
+        "projects": "passed",
+        "certifications": "passed",
+        "location": "passed",
+        "availability": "passed",
+        "phone": "passed"
+      },
+      "passed_fields": [
+        "name",
+        "skills",
+        "experience",
+        "education",
+        "job_titles",
+        "companies",
+        "projects",
+        "certifications",
+        "location",
+        "availability",
+        "phone"
+      ],
+      "failed_fields": [],
+      "missing_fields": [],
+      "list_recall": {
+        "skills": 1.0,
+        "education": 1.0,
+        "job_titles": 1.0,
+        "companies": 1.0,
+        "projects": 1.0,
+        "certifications": 1.0
+      },
+      "accuracy": 1.0,
+      "case_pass": true,
+      "predicted": {
+        "candidate_id": null,
+        "full_name": "Sanjay Pillai",
+        "email": "sanjay.pillai@example.com",
+        "phone": null,
+        "location": "Kochi",
+        "current_job_title": "DevOps Engineer",
+        "total_experience_years": 6.0,
+        "skills": [
+          "AWS",
+          "Docker",
+          "Kubernetes",
+          "Terraform"
+        ],
+        "technical_skills": [
+          "AWS",
+          "Docker",
+          "Kubernetes",
+          "Terraform"
+        ],
+        "soft_skills": [],
+        "education": [
+          {
+            "institution": "Cochin University",
+            "degree": "MCA",
+            "field": null,
+            "start_year": null,
+            "end_year": null
+          }
+        ],
+        "certifications": [
+          {
+            "name": "AWS Solutions Architect",
+            "issuer": "Amazon",
+            "year": null
+          }
+        ],
+        "companies": [
+          "Cloudyard"
+        ],
+        "previous_roles": [
+          {
+            "title": "DevOps Engineer",
+            "company": "Cloudyard",
+            "start_date": null,
+            "end_date": null,
+            "highlights": []
+          }
+        ],
+        "projects": [],
+        "achievements": [],
+        "industries": [],
+        "notice_period": null,
+        "availability": null,
+        "work_authorization": null,
+        "resume_summary": null,
+        "resume_source": null,
+        "resume_file_name": null
+      }
+    },
+    {
+      "id": "multiple_companies",
+      "category": "Multiple companies",
+      "field_scores": {
+        "name": true,
+        "skills": true,
+        "experience": true,
+        "education": true,
+        "job_titles": true,
+        "companies": true,
+        "projects": true,
+        "certifications": true,
+        "location": true,
+        "availability": true
+      },
+      "field_status": {
+        "name": "passed",
+        "skills": "passed",
+        "experience": "passed",
+        "education": "passed",
+        "job_titles": "passed",
+        "companies": "passed",
+        "projects": "passed",
+        "certifications": "passed",
+        "location": "passed",
+        "availability": "passed"
+      },
+      "passed_fields": [
+        "name",
+        "skills",
+        "experience",
+        "education",
+        "job_titles",
+        "companies",
+        "projects",
+        "certifications",
+        "location",
+        "availability"
+      ],
+      "failed_fields": [],
+      "missing_fields": [],
+      "list_recall": {
+        "skills": 1.0,
+        "education": 1.0,
+        "job_titles": 1.0,
+        "companies": 1.0,
+        "projects": 1.0,
+        "certifications": 1.0
+      },
+      "accuracy": 1.0,
+      "case_pass": true,
+      "predicted": {
+        "candidate_id": null,
+        "full_name": "Meera Joshi",
+        "email": "meera.joshi@example.com",
+        "phone": null,
+        "location": "Delhi",
+        "current_job_title": "Staff Engineer",
+        "total_experience_years": 7.0,
+        "skills": [
+          "JavaScript",
+          "Node.js",
+          "Java",
+          "PostgreSQL"
+        ],
+        "technical_skills": [
+          "JavaScript",
+          "Node.js",
+          "Java",
+          "PostgreSQL"
+        ],
+        "soft_skills": [],
+        "education": [
+          {
+            "institution": "DTU",
+            "degree": "B.Tech",
+            "field": null,
+            "start_year": null,
+            "end_year": null
+          }
+        ],
+        "certifications": [],
+        "companies": [
+          "Orion Tech",
+          "BluePeak",
+          "Ampersand"
+        ],
+        "previous_roles": [
+          {
+            "title": "Staff Engineer",
+            "company": "Orion Tech",
+            "start_date": null,
+            "end_date": null,
+            "highlights": []
+          },
+          {
+            "title": "Senior Developer",
+            "company": "BluePeak",
+            "start_date": null,
+            "end_date": null,
+            "highlights": []
+          },
+          {
+            "title": "Developer",
+            "company": "Ampersand",
+            "start_date": null,
+            "end_date": null,
+            "highlights": []
+          }
+        ],
+        "projects": [
+          {
+            "name": "Billing Hub",
+            "description": null,
+            "technologies": []
+          }
+        ],
+        "achievements": [],
+        "industries": [],
+        "notice_period": null,
+        "availability": null,
+        "work_authorization": null,
+        "resume_summary": null,
+        "resume_source": null,
+        "resume_file_name": null
+      }
+    },
+    {
+      "id": "multiple_projects",
+      "category": "Multiple projects",
+      "field_scores": {
+        "name": true,
+        "skills": true,
+        "experience": true,
+        "education": true,
+        "job_titles": true,
+        "companies": true,
+        "projects": true,
+        "certifications": true,
+        "location": true,
+        "availability": true
+      },
+      "field_status": {
+        "name": "passed",
+        "skills": "passed",
+        "experience": "passed",
+        "education": "passed",
+        "job_titles": "passed",
+        "companies": "passed",
+        "projects": "passed",
+        "certifications": "passed",
+        "location": "passed",
+        "availability": "passed"
+      },
+      "passed_fields": [
+        "name",
+        "skills",
+        "experience",
+        "education",
+        "job_titles",
+        "companies",
+        "projects",
+        "certifications",
+        "location",
+        "availability"
+      ],
+      "failed_fields": [],
+      "missing_fields": [],
+      "list_recall": {
+        "skills": 1.0,
+        "education": 1.0,
+        "job_titles": 1.0,
+        "companies": 1.0,
+        "projects": 1.0,
+        "certifications": 1.0
+      },
+      "accuracy": 1.0,
+      "case_pass": true,
+      "predicted": {
+        "candidate_id": null,
+        "full_name": "Kabir Ali",
+        "email": "kabir.ali@example.com",
+        "phone": null,
+        "location": "Noida",
+        "current_job_title": "Software Engineer",
+        "total_experience_years": 3.0,
+        "skills": [
+          "Python",
+          "React",
+          "PostgreSQL"
+        ],
+        "technical_skills": [
+          "Python",
+          "React",
+          "PostgreSQL"
+        ],
+        "soft_skills": [],
+        "education": [
+          {
+            "institution": "JSS Noida",
+            "degree": "B.Tech",
+            "field": null,
+            "start_year": null,
+            "end_year": null
+          }
+        ],
+        "certifications": [
+          {
+            "name": "Scrum Master",
+            "issuer": "Scrum.org",
+            "year": null
+          }
+        ],
+        "companies": [
+          "Harbor Digital"
+        ],
+        "previous_roles": [
+          {
+            "title": "Software Engineer",
+            "company": "Harbor Digital",
+            "start_date": null,
+            "end_date": null,
+            "highlights": []
+          }
+        ],
+        "projects": [
+          {
+            "name": "Inventory Tracker",
+            "description": null,
+            "technologies": [
+              "Python"
+            ]
+          },
+          {
+            "name": "Support Desk",
+            "description": null,
+            "technologies": [
+              "React"
+            ]
+          },
+          {
+            "name": "Payroll Export",
+            "description": null,
+            "technologies": []
+          }
+        ],
+        "achievements": [],
+        "industries": [],
+        "notice_period": null,
+        "availability": null,
+        "work_authorization": null,
+        "resume_summary": null,
+        "resume_source": null,
+        "resume_file_name": null
+      }
+    },
+    {
+      "id": "unclear_experience_dates",
+      "category": "Unclear experience dates",
+      "field_scores": {
+        "name": true,
+        "skills": true,
+        "experience": true,
+        "education": true,
+        "job_titles": true,
+        "companies": true,
+        "projects": true,
+        "certifications": true,
+        "location": true,
+        "availability": true
+      },
+      "field_status": {
+        "name": "passed",
+        "skills": "passed",
+        "experience": "passed",
+        "education": "passed",
+        "job_titles": "passed",
+        "companies": "passed",
+        "projects": "passed",
+        "certifications": "passed",
+        "location": "passed",
+        "availability": "passed"
+      },
+      "passed_fields": [
+        "name",
+        "skills",
+        "experience",
+        "education",
+        "job_titles",
+        "companies",
+        "projects",
+        "certifications",
+        "location",
+        "availability"
+      ],
+      "failed_fields": [],
+      "missing_fields": [],
+      "list_recall": {
+        "skills": 1.0,
+        "education": 1.0,
+        "job_titles": 1.0,
+        "companies": 1.0,
+        "projects": 1.0,
+        "certifications": 1.0
+      },
+      "accuracy": 1.0,
+      "case_pass": true,
+      "predicted": {
+        "candidate_id": null,
+        "full_name": "Leela Menon",
+        "email": "leela.menon@example.com",
+        "phone": null,
+        "location": "Gurgaon",
+        "current_job_title": "QA Engineer",
+        "total_experience_years": null,
+        "skills": [
+          "Selenium",
+          "Cypress",
+          "JavaScript"
+        ],
+        "technical_skills": [
+          "Selenium",
+          "Cypress",
+          "JavaScript"
+        ],
+        "soft_skills": [],
+        "education": [
+          {
+            "institution": "IGNOU",
+            "degree": "BCA",
+            "field": null,
+            "start_year": null,
+            "end_year": null
+          }
+        ],
+        "certifications": [],
+        "companies": [
+          "Softbridge"
+        ],
+        "previous_roles": [
+          {
+            "title": "QA Engineer",
+            "company": "Softbridge",
+            "start_date": null,
+            "end_date": null,
+            "highlights": []
+          },
+          {
+            "title": "Test Analyst",
+            "company": null,
+            "start_date": null,
+            "end_date": null,
+            "highlights": []
+          }
+        ],
+        "projects": [
+          {
+            "name": "Regression Pack",
+            "description": null,
+            "technologies": [
+              "Selenium"
+            ]
+          }
+        ],
+        "achievements": [],
+        "industries": [],
+        "notice_period": null,
+        "availability": null,
+        "work_authorization": null,
+        "resume_summary": null,
+        "resume_source": null,
+        "resume_file_name": null
+      }
+    },
+    {
+      "id": "missing_phone_and_availability_stated",
+      "category": "Missing phone",
+      "field_scores": {
+        "name": true,
+        "skills": true,
+        "experience": true,
+        "education": true,
+        "job_titles": true,
+        "companies": true,
+        "projects": true,
+        "certifications": true,
+        "location": true,
+        "availability": true,
+        "phone": true
+      },
+      "field_status": {
+        "name": "passed",
+        "skills": "passed",
+        "experience": "passed",
+        "education": "passed",
+        "job_titles": "passed",
+        "companies": "passed",
+        "projects": "passed",
+        "certifications": "passed",
+        "location": "passed",
+        "availability": "passed",
+        "phone": "passed"
+      },
+      "passed_fields": [
+        "name",
+        "skills",
+        "experience",
+        "education",
+        "job_titles",
+        "companies",
+        "projects",
+        "certifications",
+        "location",
+        "availability",
+        "phone"
+      ],
+      "failed_fields": [],
+      "missing_fields": [],
+      "list_recall": {
+        "skills": 1.0,
+        "education": 1.0,
+        "job_titles": 1.0,
+        "companies": 1.0,
+        "projects": 1.0,
+        "certifications": 1.0
+      },
+      "accuracy": 1.0,
+      "case_pass": true,
+      "predicted": {
+        "candidate_id": null,
+        "full_name": "Tara Singh",
+        "email": "tara.singh@example.com",
+        "phone": null,
+        "location": "Jaipur",
+        "current_job_title": "Product Designer",
+        "total_experience_years": 4.0,
+        "skills": [
+          "Figma",
+          "CSS",
+          "user research"
+        ],
+        "technical_skills": [
+          "Figma",
+          "CSS"
+        ],
+        "soft_skills": [
+          "user research"
+        ],
+        "education": [
+          {
+            "institution": "NID",
+            "degree": "B.Des",
+            "field": null,
+            "start_year": null,
+            "end_year": null
+          }
+        ],
+        "certifications": [],
+        "companies": [
+          "Loomline"
+        ],
+        "previous_roles": [
+          {
+            "title": "Product Designer",
+            "company": "Loomline",
+            "start_date": null,
+            "end_date": null,
+            "highlights": []
+          }
+        ],
+        "projects": [],
+        "achievements": [],
+        "industries": [],
+        "notice_period": null,
+        "availability": "15 days",
+        "work_authorization": null,
+        "resume_summary": null,
+        "resume_source": null,
+        "resume_file_name": null
+      }
+    }
+  ]
+}

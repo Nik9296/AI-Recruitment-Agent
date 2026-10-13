@@ -1,0 +1,60 @@
+{
+  "family": "ai-recruitment-agent",
+  "networkMode": "awsvpc",
+  "requiresCompatibilities": ["FARGATE"],
+  "cpu": "512",
+  "memory": "1024",
+  "executionRoleArn": "arn:aws:iam::ACCOUNT_ID:role/ecsTaskExecutionRole",
+  "taskRoleArn": "arn:aws:iam::ACCOUNT_ID:role/ecsTaskRole",
+  "containerDefinitions": [
+    {
+      "name": "backend",
+      "image": "ACCOUNT_ID.dkr.ecr.REGION.amazonaws.com/ai-recruitment-agent:latest",
+      "essential": true,
+      "portMappings": [
+        {
+          "containerPort": 8000,
+          "protocol": "tcp"
+        }
+      ],
+      "environment": [
+        { "name": "APP_ENV", "value": "production" },
+        { "name": "DEBUG", "value": "false" },
+        { "name": "LLM_PROVIDER", "value": "gemini" },
+        { "name": "LLM_MODEL", "value": "gemini-2.0-flash" },
+        { "name": "EMAIL_DRY_RUN", "value": "true" },
+        { "name": "CALENDAR_DRY_RUN", "value": "true" },
+        { "name": "CALENDAR_PROVIDER", "value": "none" },
+        { "name": "INTERVIEW_TIMEZONE", "value": "Asia/Kolkata" }
+      ],
+      "secrets": [
+        { "name": "DATABASE_URL", "valueFrom": "arn:aws:ssm:REGION:ACCOUNT_ID:parameter/recruitment/DATABASE_URL" },
+        { "name": "GOOGLE_API_KEY", "valueFrom": "arn:aws:ssm:REGION:ACCOUNT_ID:parameter/recruitment/GOOGLE_API_KEY" },
+        { "name": "RECRUITER_USERNAME", "valueFrom": "arn:aws:ssm:REGION:ACCOUNT_ID:parameter/recruitment/RECRUITER_USERNAME" },
+        { "name": "RECRUITER_PASSWORD", "valueFrom": "arn:aws:ssm:REGION:ACCOUNT_ID:parameter/recruitment/RECRUITER_PASSWORD" },
+        { "name": "RECRUITER_SESSION_SECRET", "valueFrom": "arn:aws:ssm:REGION:ACCOUNT_ID:parameter/recruitment/RECRUITER_SESSION_SECRET" },
+        { "name": "EMAIL_FROM_ADDRESS", "valueFrom": "arn:aws:ssm:REGION:ACCOUNT_ID:parameter/recruitment/EMAIL_FROM_ADDRESS" },
+        { "name": "AWS_REGION", "valueFrom": "arn:aws:ssm:REGION:ACCOUNT_ID:parameter/recruitment/AWS_REGION" },
+        { "name": "SENDGRID_API_KEY", "valueFrom": "arn:aws:ssm:REGION:ACCOUNT_ID:parameter/recruitment/SENDGRID_API_KEY" },
+        { "name": "GOOGLE_CALENDAR_ID", "valueFrom": "arn:aws:ssm:REGION:ACCOUNT_ID:parameter/recruitment/GOOGLE_CALENDAR_ID" },
+        { "name": "GOOGLE_CALENDAR_CREDENTIALS_JSON", "valueFrom": "arn:aws:ssm:REGION:ACCOUNT_ID:parameter/recruitment/GOOGLE_CALENDAR_CREDENTIALS_JSON" },
+        { "name": "CORS_ORIGINS", "valueFrom": "arn:aws:ssm:REGION:ACCOUNT_ID:parameter/recruitment/CORS_ORIGINS" }
+      ],
+      "healthCheck": {
+        "command": ["CMD-SHELL", "python -c \"import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/ready')\""],
+        "interval": 30,
+        "timeout": 5,
+        "retries": 3,
+        "startPeriod": 20
+      },
+      "logConfiguration": {
+        "logDriver": "awslogs",
+        "options": {
+          "awslogs-group": "/ecs/ai-recruitment-agent",
+          "awslogs-region": "REGION",
+          "awslogs-stream-prefix": "backend"
+        }
+      }
+    }
+  ]
+}

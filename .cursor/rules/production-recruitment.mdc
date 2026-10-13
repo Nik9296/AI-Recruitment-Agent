@@ -1,0 +1,57 @@
+---
+description: Production constraints for the AI Recruitment Agent
+alwaysApply: true
+---
+
+# Production AI Recruitment System
+
+This is a production recruitment product. Follow these constraints on every change.
+
+## Stack
+
+- Backend: FastAPI in `app/` (`app/main.py`). Keep APIs versioned under `/api/v1`.
+- Frontend: Next.js + React. Do not introduce another UI framework.
+- Do not scaffold the frontend until the recruiter dashboard phase. Until then, extend FastAPI only.
+
+## Scope and secrets
+
+- Change only files required for the current task.
+- Never expose API keys, passwords, or secrets in code, logs, tests, commits, or docs.
+- Never hardcode credentials. Read them from environment variables / settings.
+
+```python
+# ❌ BAD
+client = Gemini(api_key="AIza...")
+
+# ✅ GOOD
+client = Gemini(api_key=settings.google_api_key)
+```
+
+## Agents
+
+- Keep agents modular and independently testable.
+- Use structured Pydantic models for all LLM outputs (`with_structured_output`).
+- Do not put database, email, calendar, or HTTP/API integration logic inside agent files. Agents extract/decide; services and repositories integrate.
+
+```python
+# ❌ BAD — in sourcing_agent.py
+await session.execute(insert(Candidate), rows)
+send_email(candidate.email, "You're hired")
+
+# ✅ GOOD — agent returns a Pydantic result; a service persists or notifies
+profile = SourcingAgent().search(job_profile)
+await candidate_service.save(profile)
+```
+
+## Hiring integrity
+
+- Do not invent candidate information. If a field is missing, leave it null/empty.
+- Do not make final hiring decisions autonomously.
+- Keep human recruiter approval before any candidate outreach.
+
+## Tests and phase gate
+
+- Every feature must include tests.
+- Run tests after making changes.
+- Do not start the next recruitment agent until the current agent’s tests pass.
+- Current sequence: JD Agent (done) → sourcing → resume → matching → ranking → dashboard → outreach → scheduling → LangGraph → AWS.

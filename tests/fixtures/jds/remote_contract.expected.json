@@ -1,0 +1,17 @@
+{
+  "job_title": "Contract Data Engineer",
+  "experience_min": 2,
+  "experience_max": null,
+  "location": null,
+  "work_mode": "Remote",
+  "employment_type": "Contract",
+  "must_have_skills": ["SQL", "dbt", "Snowflake", "Airflow"],
+  "preferred_skills": ["Python", "Spark"],
+  "education": [],
+  "responsibilities": [
+    "build pipelines",
+    "monitor data quality",
+    "document datasets"
+  ],
+  "keywords": ["SQL", "dbt", "Snowflake", "Airflow", "Python", "Spark"]
+}

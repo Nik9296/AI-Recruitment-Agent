@@ -1,0 +1,16 @@
+Contract Data Engineer (Remote)
+
+We need a contractor for a 6-month engagement. This is fully remote, work from
+home from anywhere.
+
+Experience: 2+ years.
+
+Required:
+SQL, dbt, Snowflake, Airflow
+
+Nice to have:
+Python, Spark
+
+You will build pipelines, monitor data quality, and document datasets.
+
+No degree required.

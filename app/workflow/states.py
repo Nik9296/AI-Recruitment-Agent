@@ -1,0 +1,58 @@
+"""Human-approval workflow states for a job-candidate pair."""
+
+from enum import StrEnum
+
+
+class WorkflowState(StrEnum):
+    NEW = "NEW"
+    MATCHED = "MATCHED"
+    SHORTLISTED = "SHORTLISTED"
+    PENDING_REVIEW = "PENDING_REVIEW"
+    APPROVED_FOR_OUTREACH = "APPROVED_FOR_OUTREACH"
+    REJECTED = "REJECTED"
+    ON_HOLD = "ON_HOLD"
+    CONTACTED = "CONTACTED"
+    RESPONDED = "RESPONDED"
+    INTERVIEW_INVITED = "INTERVIEW_INVITED"
+    INTERVIEW_SCHEDULED = "INTERVIEW_SCHEDULED"
+    HIRED = "HIRED"
+    WITHDRAWN = "WITHDRAWN"
+
+
+TERMINAL_OUTREACH_STATES = frozenset(
+    {
+        WorkflowState.CONTACTED,
+        WorkflowState.RESPONDED,
+        WorkflowState.INTERVIEW_INVITED,
+        WorkflowState.INTERVIEW_SCHEDULED,
+        WorkflowState.HIRED,
+    }
+)
+
+REVIEW_PENDING = "pending"
+REVIEW_APPROVED = "approved"
+REVIEW_REJECTED = "rejected"
+REVIEW_ON_HOLD = "on_hold"
+
+WORKFLOW_TO_REVIEW_STATUS = {
+    WorkflowState.NEW: REVIEW_PENDING,
+    WorkflowState.MATCHED: REVIEW_PENDING,
+    WorkflowState.SHORTLISTED: REVIEW_PENDING,
+    WorkflowState.PENDING_REVIEW: REVIEW_PENDING,
+    WorkflowState.APPROVED_FOR_OUTREACH: REVIEW_APPROVED,
+    WorkflowState.REJECTED: REVIEW_REJECTED,
+    WorkflowState.ON_HOLD: REVIEW_ON_HOLD,
+    WorkflowState.CONTACTED: REVIEW_APPROVED,
+    WorkflowState.RESPONDED: REVIEW_APPROVED,
+    WorkflowState.INTERVIEW_INVITED: REVIEW_APPROVED,
+    WorkflowState.INTERVIEW_SCHEDULED: REVIEW_APPROVED,
+    WorkflowState.HIRED: REVIEW_APPROVED,
+    WorkflowState.WITHDRAWN: REVIEW_REJECTED,
+}
+
+REVIEW_ACTION_TO_WORKFLOW = {
+    REVIEW_APPROVED: WorkflowState.APPROVED_FOR_OUTREACH,
+    REVIEW_REJECTED: WorkflowState.REJECTED,
+    REVIEW_ON_HOLD: WorkflowState.ON_HOLD,
+    REVIEW_PENDING: WorkflowState.PENDING_REVIEW,
+}

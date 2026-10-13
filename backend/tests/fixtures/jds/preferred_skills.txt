@@ -1,0 +1,20 @@
+Frontend Engineer (React)
+
+Location: Mumbai
+Employment: Permanent full-time
+Work mode: Hybrid
+
+Experience: 2-4 years.
+
+Required skills:
+HTML, CSS, TypeScript
+
+Preferred / nice to have:
+Next.js, GraphQL, Figma, Jest
+
+Education: Bachelor's preferred.
+
+Responsibilities:
+- Build UI components
+- Work with design
+- Improve frontend performance

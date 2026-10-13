@@ -1,0 +1,29 @@
+Job Title: Senior Backend Engineer
+
+Location: Bengaluru, Karnataka, India
+Work mode: On-site, five days in office
+Employment type: Full-time
+
+About the role:
+We are looking for a Senior Backend Engineer with 5-8 years of experience
+building production APIs.
+
+Must-have skills:
+- Python
+- FastAPI
+- PostgreSQL
+- Docker
+- k8s
+
+Preferred skills:
+- Go
+- AWS
+- Terraform
+
+Education:
+Bachelor's degree in Computer Science or equivalent.
+
+Responsibilities:
+- Design and implement backend services
+- Review code and mentor junior engineers
+- Improve reliability and observability
